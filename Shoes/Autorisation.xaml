@@ -1,0 +1,26 @@
+﻿<Window x:Class="Shoes.Autorisation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Shoes"
+        mc:Ignorable="d"
+        Title="Авторизация" Height="350" Width="350" WindowStartupLocation="CenterScreen" Icon="/Icon.png"
+        FontFamily="Times New Roman" Background="#FFFFFF">
+
+    
+    <StackPanel VerticalAlignment="Center" Background="#7FFF00" >
+        <Image Source="/icon.png" Width="100" Height="100" Stretch="Fill" />
+
+        <TextBlock Text="Авторизация" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,15"/>
+
+        <TextBlock Text="Логин:" Margin="0,0,0,5"/>
+        <TextBox x:Name="Login" Margin="0,0,0,10" Height="25"/>
+
+        <TextBlock Text="Пароль:" Margin="0,0,0,5"/>
+        <PasswordBox x:Name="Password" Margin="0,0,0,15" Height="25"/>
+
+        <Button Content="Войти" Click="btnLogin_Click" Margin="0,0,0,10" Padding="5" Background="#00FA9A" FontWeight="Bold"/>
+        <Button Content="Войти как гость" Click="btnGuest_Click" Padding="5" Background="#00FA9A" FontWeight="Bold"/>
+    </StackPanel>
+</Window>
